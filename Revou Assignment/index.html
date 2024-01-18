@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katik - Kalkulator Matematik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Eczar:wght@500;700;800&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+          <div class="navbar__container">
+            <a id="navbar__logo">Katik</a>&nbsp;
+            <a id="navbar__logo2">Kalkulator Matematik</a>
+          </div>
+        </nav>
+    
+        <!-- Sejarah Section -->
+        <div class="main" id="sejarah">
+          <div class="main__container">
+            <div class="main__content">
+              <h1>Welcome to Katik</h1>
+              <p>Hai Sobat, Selamat datang di Katik :]
+                <br>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar</p>
+            </div>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)">Persegi</span>
+                            <span class="dot" onclick="currentSlide(2)">P. Panjang</span>
+                          </div>
+            
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator Section -->
+        <div class="calc" id="calc">
+          <div class="calc__container">
+            <div class="calc__content">
+                <h1>Luas dan Keliling</h1>
+            </div>
+
+            <div class="calc__img--container fade">
+              <p>        <div class="calc__img--container fade"></p>
+                <a href="#"><img src="persegi.webp" alt="Persegi" width="100" height="100"/></a>
+                <h1>Persegi</h1>
+                <img src="persegi.webp" alt="Persegi" width="100" height="100"/>
+                <form id="persegiForm">
+                    <label for="sisi">Nilai Sisi:</label><br>
+                    <input type="number" id="sisi" name="sisi"><br>
+                    <input type="submit" value="Hitung">
+                </form>
+                <p id="hasilPersegi"></p>
+            </div>
+
+            </div>
+            <div class="calc__img--container fade">
+              <h1>The Kidnapper's Bog Arc</h1>
+              <a href="#"><img src="ppanjang.jpg" alt="Persegi Panjang" width="100" height="100"/></a>
+              <h1>Persegi Panjang</h1>
+            <img src="ppanjang.jpg" alt="Persegi Panjang" width="100" height="100"/>
+            <form id="ppanjangForm">
+                <label for="panjang">Nilai Panjang:</label><br>
+                <input type="number" id="panjang" name="panjang"><br>
+                <label for="lebar">Nilai Lebar:</label><br>
+                <input type="number" id="lebar" name="lebar"><br>
+                <input type="submit" value="Hitung">
+            </form>
+            <p id="hasilPpanjang"></p>
+            </div>
+
+          </div>
+        </div>
+    
+        <!--Footer Section -->
+        <div class="footer__container">
+          <section class="social__media">
+            <div class="social__media--wrap">
+                <p class="website__rights">&copy; Copyright 2024, Katik</p>
+            </div>
+          </section>
+        </div>
+
+        <script src="script.js"></script>
+
+</body>
+</html>
